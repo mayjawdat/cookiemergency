@@ -1,5 +1,5 @@
+# go to form to create new user
 get '/users/new' do
-  # go to form to create new user
   erb :'/users/new'
 end
 
