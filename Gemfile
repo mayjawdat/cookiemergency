@@ -1,5 +1,11 @@
 source 'https://rubygems.org'
 
+gem 'rails'
+gem 'stripe'
+gem 'bcrypt'
+gem 'bcrypt-ruby'
+gem 'dotenv'
+
 # PostgreSQL driver
 gem 'pg'
 
