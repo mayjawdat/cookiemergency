@@ -1,13 +1,20 @@
-get '/orders/new' do
   # go to form to create new order
+get '/orders/new' do
   erb :'/orders/new'
 end
 
-post '/orders' do
   # create new order
+post '/orders' do
+  @order = Order.new(params[:order])
+  if @order.save
+    erb :'/orders/show'
+  else
+    @errors = @order.errors
+    erb :'/orders/new'
+  end
 end
 
-get '/orders/:id' do
   # show specific order
   # /orders/show
+get '/orders/:id' do
 end
