@@ -1,5 +1,11 @@
 <h3>Log in here</h3>
 
+<% if @errors %>
+  <% @errors.each do |error| %>
+  <p><%= error %></p>
+  <% end %>
+  <% end %>
+
 <form action='/sessions' method='POST'>
 <input type="text" name="email" placeholder="Email">
 <input type="password" name="password" placeholder="Password">

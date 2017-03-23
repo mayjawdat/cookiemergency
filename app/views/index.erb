@@ -1,0 +1,13 @@
+<h1>Cookiemergency</h1>
+<h3>Desperate times call for desperate measures</h3>
+
+<% if logged_in?  %>
+<p><a href='/orders/new'>Place your order</a></p>
+<% else %>
+<p><a href='/users/new'>Click here to sign up</a></p>
+<p><a href='/sessions/new'>Click here to log in</a></p>
+<% end %>
+
+
+
+<p><a href='/sessions/delete'>Click here to log out</a></p>

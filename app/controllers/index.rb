@@ -1,6 +1,7 @@
 get '/' do
-  "Num num cookies."
+  erb :'index'
 end
+
 
 # get new order form
 # post new order form
