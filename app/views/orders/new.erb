@@ -1,12 +1,33 @@
-<h3>Place your order here</h3>
+<h4>Place your order here</h4>
 
-<form action='/orders' method='POST'>
-<h4>Flavors</h4>
-<input type="checkbox" name="cookie" value="chocolate_chip">Chocolate chip<input type="text" name="number"><br>
-<input type="checkbox" name="cookie" value="oatmeal_raisin">Oatmeal raisin<input type="text" name="number"><br>
-<input type="checkbox" name="cookie" value="salted_caramel">Salted caramel<input type="text" name="number"><br>
-<input type="checkbox" name="cookie" value="triple_chocolate">Triple chocolate<input type="text" name="number"><br>
-<input type="checkbox" name="cookie" value="turtle">Turtle<input type="text" name="number"><br>
-<input type="checkbox" name="cookie" value="nutella">Nutella shortbread sandwich<input type="text" name="number"><br>
-<input type="submit" value="Gimme">
-</form>
+
+<div class="row"  action='/orders' method='POST'>
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+
+<p><input type="checkbox" id="chocolate_chip"/>
+<label for="chocolate_chip">Chocolate chip</label></p>
+
+<p><input type="checkbox" id="oatmeal_raisin"/>
+<label for="oatmeal_raisin">Oatmeal raisin</label></p>
+
+<p><input type="checkbox" id="salted_caramel"/>
+<label for="salted_caramel">Salted caramel</label></p>
+
+<p><input type="checkbox" id="triple_chocolate"/>
+<label for="triple_chocolate">Triple chocolate</label></p>
+
+<p><input type="checkbox" id="turtle"/>
+<label for="turtle">Turtle</p>
+
+<p><input type="checkbox" id="nutella"/>
+<label for="nutella">Nutella shortbread sandwich</label></p>
+<br>
+
+<p><input type="submit" value="Gimme">
+
+        </div>
+      </div>
+    </form>
+  </div>

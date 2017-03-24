@@ -1,10 +1,12 @@
+require 'bcrypt'
+
 class User < ActiveRecord::Base
   include BCrypt
 
   has_many :orders
 
-  validates :username, :email, :hashed_password, {presence: true}
-  validates :username, :email, {uniqueness: true}
+  validates :email, :hashed_password, {presence: true}
+  validates :email, {uniqueness: true}
 
   def password 
     @password ||= BCrypt::Password.new(hashed_password)
