@@ -1,5 +1,4 @@
-<h4>Place your order here</h4>
-
+<h5>Get some cookies</h5>
 
 <div class="row"  action='/orders' method='POST'>
     <form class="col s12">
@@ -7,27 +6,50 @@
         <div class="input-field col s6">
 
 <p><input type="checkbox" id="chocolate_chip"/>
-<label for="chocolate_chip">Chocolate chip</label></p>
+<label for="chocolate_chip">Chocolate chip</label>
+<div class="input-field inline">
+<input type="text">
+</div>
+</p>
 
 <p><input type="checkbox" id="oatmeal_raisin"/>
-<label for="oatmeal_raisin">Oatmeal raisin</label></p>
+<label for="oatmeal_raisin">Oatmeal raisin</label><div class="input-field inline">
+<input type="text">
+</div></p>
 
 <p><input type="checkbox" id="salted_caramel"/>
-<label for="salted_caramel">Salted caramel</label></p>
+<label for="salted_caramel">Salted caramel</label><div class="input-field inline">
+<input type="text">
+</div></p>
 
 <p><input type="checkbox" id="triple_chocolate"/>
-<label for="triple_chocolate">Triple chocolate</label></p>
+<label for="triple_chocolate">Triple chocolate</label><div class="input-field inline">
+<input type="text">
+</div></p>
 
 <p><input type="checkbox" id="turtle"/>
-<label for="turtle">Turtle</p>
+<label for="turtle">Turtle<div class="input-field inline">
+<input type="text">
+</div></p>
 
 <p><input type="checkbox" id="nutella"/>
-<label for="nutella">Nutella shortbread sandwich</label></p>
+<label for="nutella">Nutella shortbread sandwich</label><div class="input-field inline">
+<input type="text">
+</div></p>
 <br>
 
-<p><input type="submit" value="Gimme">
+  <script
+    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="pk_test_hEQKyzlmCn5JTdeVqHq72xof"
+    data-amount="999"
+    data-name="Demo Site"
+    data-description="Widget"
+    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+    data-locale="auto">
+  </script>
 
         </div>
       </div>
     </form>
   </div>
+
